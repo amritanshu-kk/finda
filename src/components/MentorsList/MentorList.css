@@ -1,0 +1,37 @@
+@media all and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+
+  .mentors-wrapper {
+    padding: 0 18px;
+    background: #fff;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+
+  .mentors-wrapper.active {
+    transform: translateY(300px);
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .mentors-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.mentors-wrapper .loader {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.nothing-to-show {
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 8px;
+}
